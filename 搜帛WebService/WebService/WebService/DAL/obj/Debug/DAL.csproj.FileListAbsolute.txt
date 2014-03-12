@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\bin\Debug\DAL.dll
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\bin\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\bin\Debug\DBHelper.dll
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\bin\Debug\DBHelper.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\obj\Debug\DAL.dll
+C:\Users\Administrator\Desktop\WebService\WebService\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\bin\Debug\DBHelper.dll
+C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\bin\Debug\DBHelper.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\obj\Debug\DBHelper.dll
+C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\obj\Debug\DBHelper.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\obj\Debug\DBHelper.csprojResolveAssemblyReference.cache
