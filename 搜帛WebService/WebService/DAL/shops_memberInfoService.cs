@@ -18,6 +18,7 @@ namespace DAL
             MySqlParameter[] pars = new MySqlParameter[] { 
                 new MySqlParameter("@user_id",MySqlDbType.Int32)
             };
+            pars[0].Value = user_Id;
 
             Model.shops_memberInfo obj = null;
 

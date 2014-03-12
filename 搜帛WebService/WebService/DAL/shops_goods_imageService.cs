@@ -9,11 +9,10 @@ namespace DAL
 {
     public class shops_goods_imageService
     {
-        //根据图片id获取图片路径
         public static List<Model.shops_goods_image> getShops_Goods_ImageById(int goods_id)
         {
             List<Model.shops_goods_image> list = new List<Model.shops_goods_image>();
-            //拼接sql语句
+
             string SQL = DBHelper.MySQL.CreateSQLIndex(" image_url "," shops_goods_image  ","goods_id = " + goods_id,null,null,0);
 
             DataTable dt = DBHelper.MySQL.GetDT(SQL);

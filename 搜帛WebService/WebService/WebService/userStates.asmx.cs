@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 
-
+using System.Web.Script.Serialization;
 
 namespace WebService
 {
@@ -18,17 +18,17 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class userStates : System.Web.Services.WebService
     {
-        [WebMethod]
+        [WebMethod(Description = "登录的方法")]
         public int loginValidate(string userName, string userPsd)
         {
             Model.shops_member obj = new Model.shops_member();
             obj.user_name = userName;
             obj.password = userPsd;
-            ////////////////////////////////
+
             return BLL.shops_memberManager.login(obj, HttpContext.Current.Request.UserHostAddress);
         }
 
-        [WebMethod]
+        [WebMethod(Description = "注册的方法")]
         public int register(string userName, string userPsd, string eMail)
         {
             Model.shops_member obj = new Model.shops_member();
@@ -39,10 +39,16 @@ namespace WebService
             return BLL.shops_memberManager.register(obj, HttpContext.Current.Request.UserHostAddress);
         }
 
-        [WebMethod]
-        public Model.shops_memberInfo findShops_memberInfoById(int userId)
+        [WebMethod(Description = "获取单个用户信息")]
+        public string findShops_memberInfoById(int userId)
         {
-            return BLL.shops_memberInfoManager.findShops_memberInfoById(userId);
+            JavaScriptSerializer js = new JavaScriptSerializer();
+
+            Model.shops_memberInfo obj = BLL.shops_memberInfoManager.findShops_memberInfoById(userId);
+
+            string json = js.Serialize(obj);
+
+            return json;
         }
     }
 }

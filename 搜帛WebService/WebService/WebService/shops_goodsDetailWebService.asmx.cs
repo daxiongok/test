@@ -19,7 +19,7 @@ namespace WebService
     public class shops_goodsDetailWebService : System.Web.Services.WebService
     {
 
-        [WebMethod]
+        [WebMethod(Description = "获取单个商品返回了三个JSON")]
         public string getShops_GoodsDetail(int goods_id)
         {
             List<Model.shops_goods_image> imgList = BLL.shops_goods_imageManager.getShops_Goods_ImageById(goods_id);

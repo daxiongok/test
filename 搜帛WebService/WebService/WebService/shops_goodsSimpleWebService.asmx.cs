@@ -19,7 +19,7 @@ namespace WebService
     public class shops_goodsSimpleWebService : System.Web.Services.WebService
     {
 
-        [WebMethod]
+        [WebMethod(Description = "商品列表")]
         public string getShops_goodsSimpleList(int pageIndex,int cate_id)
         {
             List<Model.shops_goodsSimple> objList = BLL.shops_goodsSimpleManager.getShops_goodsSimpleList(pageIndex, cate_id);

@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="C:\Users\Administrator\Desktop\ssssss" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="Web.config" publishTime="03/11/2014 17:32:15" />
-    <file relUrl="bin/WebService.dll" publishTime="03/11/2014 17:32:15" />
+    <file relUrl="Web.config" publishTime="03/12/2014 13:17:02" />
+    <file relUrl="bin/WebService.dll" publishTime="03/12/2014 14:10:56" />
+    <file relUrl="bin/DBHelper.dll" publishTime="03/12/2014 13:12:51" />
     <file relUrl="userStates.asmx" publishTime="03/11/2014 09:38:25" />
-    <file relUrl="bin/Model.dll" publishTime="03/11/2014 17:30:51" />
-    <file relUrl="bin/DAL.dll" publishTime="03/11/2014 17:30:51" />
-    <file relUrl="bin/DBHelper.pdb" publishTime="03/11/2014 17:30:51" />
-    <file relUrl="bin/WebService.pdb" publishTime="03/11/2014 17:32:15" />
-    <file relUrl="Web - 副本.config" publishTime="03/10/2014 09:33:12" />
-    <file relUrl="bin/BLL.dll" publishTime="03/11/2014 17:30:51" />
+    <file relUrl="bin/Model.dll" publishTime="03/12/2014 13:12:51" />
+    <file relUrl="bin/DAL.dll" publishTime="03/12/2014 14:10:56" />
+    <file relUrl="bin/DBHelper.pdb" publishTime="03/12/2014 13:12:51" />
+    <file relUrl="bin/WebService.pdb" publishTime="03/12/2014 14:10:56" />
+    <file relUrl="bin/Model.pdb" publishTime="03/12/2014 13:12:51" />
     <file relUrl="Global.asax" publishTime="03/03/2014 18:02:29" />
-    <file relUrl="bin/DBHelper.dll" publishTime="03/11/2014 17:30:51" />
-    <file relUrl="bin/BLL.pdb" publishTime="03/11/2014 17:30:51" />
+    <file relUrl="bin/DAL.pdb" publishTime="03/12/2014 14:10:56" />
+    <file relUrl="bin/BLL.pdb" publishTime="03/12/2014 14:10:56" />
     <file relUrl="shops_goodsSimpleWebService.asmx" publishTime="03/05/2014 11:33:43" />
-    <file relUrl="bin/Model.pdb" publishTime="03/11/2014 17:30:51" />
+    <file relUrl="Web - 副本.config" publishTime="03/10/2014 09:33:12" />
     <file relUrl="shops_goodsDetailWebService.asmx" publishTime="03/07/2014 16:11:04" />
-    <file relUrl="bin/DAL.pdb" publishTime="03/11/2014 17:30:51" />
+    <file relUrl="bin/BLL.dll" publishTime="03/12/2014 14:10:56" />
   </publishProfile>
 </publishData>
