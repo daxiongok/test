@@ -19,6 +19,7 @@ namespace WebService
     public class shops_goodsDetailWebService : System.Web.Services.WebService
     {
         //dadadadadadad
+        //测试看看
         [WebMethod(Description = "获取单个商品返回了三个JSON")]
         public string getShops_GoodsDetail(int goods_id)
         {
