@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\WebService\WebService\Model\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\WebService\Model\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\Model\obj\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\WebService\Model\obj\Debug\Model.pdb

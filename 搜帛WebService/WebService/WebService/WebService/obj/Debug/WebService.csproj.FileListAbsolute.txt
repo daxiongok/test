@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\WebService.dll
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\WebService.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\BLL.dll
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\Model.dll
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\DAL.dll
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\DBHelper.dll
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\BLL.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\Model.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\DAL.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\bin\DBHelper.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\obj\Debug\WebService.dll
+C:\Users\Administrator\Desktop\WebService\WebService\WebService\obj\Debug\WebService.pdb

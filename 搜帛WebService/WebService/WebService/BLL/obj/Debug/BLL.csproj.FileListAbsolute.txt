@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\BLL.dll
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\BLL.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\DAL.dll
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\DBHelper.dll
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\bin\Debug\DBHelper.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\obj\Debug\BLL.dll
+C:\Users\Administrator\Desktop\WebService\WebService\BLL\obj\Debug\BLL.pdb
