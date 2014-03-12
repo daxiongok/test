@@ -24,7 +24,7 @@ namespace WebService
             Model.shops_member obj = new Model.shops_member();
             obj.user_name = userName;
             obj.password = userPsd;
-
+            ////////////////////////////////
             return BLL.shops_memberManager.login(obj, HttpContext.Current.Request.UserHostAddress);
         }
 
