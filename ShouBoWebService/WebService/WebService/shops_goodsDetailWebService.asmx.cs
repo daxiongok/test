@@ -22,6 +22,7 @@ namespace WebService
         //测试看看
         //这次一定行！！！
         //我再传一次,zhebiankankan
+        //vs自带测试
 
         [WebMethod(Description = "获取单个商品返回了三个JSON")]
         public string getShops_GoodsDetail(int goods_id)
