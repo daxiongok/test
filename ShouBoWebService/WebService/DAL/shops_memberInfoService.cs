@@ -11,6 +11,7 @@ namespace DAL
 {
     public class shops_memberInfoService
     {
+        //用户信息查询
         public static Model.shops_memberInfo findShops_memberInfoById(int user_Id)
         {
             string SQL = "select user_id,user_name,user_grade,grade_points from shops_member where user_id = @user_id ";

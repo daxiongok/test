@@ -9,6 +9,7 @@ namespace DAL
 {
     public class shops_goods_specService
     {
+        //获取商品购买页信息
         public static List<Model.shops_goods_spec> getShops_Goods_ImageById(int goods_id)
         {
             List<Model.shops_goods_spec> list = new List<Model.shops_goods_spec>();

@@ -9,7 +9,7 @@ namespace DAL
 {
     public class shops_goodsDetailService
     {
-
+        //商品详细信息查询
         public static List<Model.shops_goodsDetail> getShops_goodsSimpleList( int goods_id)
         {
             List<Model.shops_goodsDetail> objList = new List<Model.shops_goodsDetail>();
