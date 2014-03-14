@@ -18,17 +18,24 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class userStates : System.Web.Services.WebService
     {
-        [WebMethod(Description = "登录的方法")]
+        [WebMethod(Description = "登录的方法", EnableSession = true)]
         public int loginValidate(string userName, string userPsd)
         {
             Model.shops_member obj = new Model.shops_member();
             obj.user_name = userName;
             obj.password = userPsd;
 
-            return BLL.shops_memberManager.login(obj, HttpContext.Current.Request.UserHostAddress);
+            int result = BLL.shops_memberManager.login(obj, HttpContext.Current.Request.UserHostAddress);
+
+            if (result>0)
+            {
+                Session["result"] = result;
+            }
+
+            return result;
         }
 
-        [WebMethod(Description = "注册的方法")]
+        [WebMethod(Description = "注册的方法", EnableSession = true)]
         public int register(string userName, string userPsd, string eMail)
         {
             Model.shops_member obj = new Model.shops_member();
@@ -49,6 +56,12 @@ namespace WebService
             string json = js.Serialize(obj);
 
             return json;
+        }
+
+        [WebMethod(Description = "获取单个用户信息", EnableSession = true)]
+        public string session()
+        {
+            return Session["result"].ToString() + Session.SessionID;
         }
     }
 }

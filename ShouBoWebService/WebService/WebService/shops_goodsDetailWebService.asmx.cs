@@ -18,14 +18,6 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class shops_goodsDetailWebService : System.Web.Services.WebService
     {
-        //dadadadadadad
-        //测试看看
-        //这次一定行！！！
-        //我再传一次,zhebiankankan
-        //vs自带测试
-        //认真测试一次
-        //我这边测试一次
-        //meigaomingbai
 
         [WebMethod(Description = "获取单个商品返回了三个JSON")]
         public string getShops_GoodsDetail(int goods_id)
@@ -34,7 +26,7 @@ namespace WebService
 
             List<Model.shops_goodsDetail> detList = BLL.shops_goodsDetailManager.getShops_goodsSimpleList(goods_id);
 
-            List<Model.shops_goods_spec> speList = BLL.shops_goods_specManager.getShops_Goods_ImageById(goods_id);
+            List<Model.shops_goods_spec> speList = BLL.shops_goods_specManager.getShops_goods_specById(goods_id);
 
 
             JavaScriptSerializer jss = new JavaScriptSerializer();

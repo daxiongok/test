@@ -33,6 +33,10 @@ namespace DBHelper
         {
             return CreateSQLIndex(select, tableName, null, null, null, null, null, PageIndexs);
         }
+        public static string CreateSQLIndex(string select, string tableName, string where, int PageIndexs) 
+        {
+            return CreateSQLIndex(select, tableName, where, null, null, null, null, PageIndexs);
+        }
         public static string CreateSQLIndex(string select, string tableName, string where, string order, string orderBy, int PageIndexs)
         {
             return CreateSQLIndex(select, tableName, where, order, orderBy, null, null, PageIndexs);

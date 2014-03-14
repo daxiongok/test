@@ -9,7 +9,6 @@ namespace DAL
 {
     public class shops_goods_imageService
     {
-        //根据商品id获取商品图片链接
         public static List<Model.shops_goods_image> getShops_Goods_ImageById(int goods_id)
         {
             List<Model.shops_goods_image> list = new List<Model.shops_goods_image>();
@@ -32,5 +31,7 @@ namespace DAL
 
             return list;
         }
+  
+    
     }
 }

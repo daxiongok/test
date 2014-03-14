@@ -1,10 +1,3 @@
-//============================================================
-// Producnt name:		ZXL
-// Version: 			1.0
-// Coded by:			ZXL (xiling.zhang@lnbdqn.com)
-// Auto generated at: 	2012-8-3 14:22:29
-//============================================================
-
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +11,7 @@ namespace CqbdqnFramework.DAL
     public static class DBHelper
     {
         private static string ConnectionStrings = ConfigurationSettings.AppSettings["connStr"].ToString();
-		public static int pageRowsNum = 10;
+		public static int rowCounts = 10;
 		public static SqlConnection conn;
         public static SqlTransaction tran;
         public static SqlCommand command;
@@ -74,21 +67,81 @@ namespace CqbdqnFramework.DAL
                 conn = null;
             }
         }
-       
-		public static string getSqlByPage(string selectSql,string idCloName, string orderByStr,int nowPage)
+
+        #region SQLÓï¾ä
+        public static string CreateSQLIndex(string select, string tableName, int PageIndexs)
         {
-            string sql = "SELECT ";
-            sql = sql + " top " + pageRowsNum.ToString() + " ";   
-            sql=sql+" * ";
-            sql = sql + " FROM (" + selectSql + ") as childrenSelctTableAA ";
-            sql = sql + " WHERE childrenSelctTableAA." + idCloName + " NOT IN(";
-            sql = sql + " SELECT TOP (" + ((nowPage - 1) * pageRowsNum).ToString() + ") ";
-            sql = sql + " " + idCloName + " ";
-            sql = sql + " FROM (" + selectSql + ") as childrenSelctTableBB";
-            sql = sql + " ORDER BY childrenSelctTableBB." + orderByStr + " ) ";
-            sql = sql + " ORDER BY childrenSelctTableAA." + orderByStr + " ";
-            return sql;
+            return CreateSQLIndex(select, tableName, null, null, null, null, null, PageIndexs);
         }
+        public static string CreateSQLIndex(string select, string tableName, string where, string order, string orderBy, int PageIndexs)
+        {
+            return CreateSQLIndex(select, tableName, where, order, orderBy, null, null, PageIndexs);
+        }
+        public static string CreateSQLIndex(string select, string tableName, string where, string having, string groupBy, string order, string orderBy, int PageIndexs)
+        {
+            StringBuilder SQL = new StringBuilder();
+            SQL.Append(" select ");
+            SQL.Append(select);
+            SQL.Append(" from ");
+            SQL.Append(tableName);
+
+            #region Where
+            if (where != null)
+            {
+                SQL.Append(" where ");
+                SQL.Append(where);
+            }
+            #endregion
+
+            #region having
+            if (having != null)
+            {
+                SQL.Append(" having ");
+                SQL.Append(having);
+            }
+            #endregion
+
+            #region groupBy
+            if (groupBy != null)
+            {
+                SQL.Append(" group by ");
+                SQL.Append(groupBy);
+            }
+            #endregion
+
+            #region order
+            if (order != null)
+            {
+                SQL.Append(" order by ");
+                SQL.Append(order);
+            }
+            #endregion
+
+            #region orderBy
+            if (orderBy != null)
+            {
+                SQL.Append(orderBy);
+            }
+            #endregion
+
+            #region PageIndex
+            if (PageIndexs > 0 && rowCounts > 0)
+            {
+                int minRow = -1;
+                int maxRow = -1;
+                int rowCount = -1;
+
+                rowCount = rowCounts;
+                minRow = (PageIndexs - 1) * rowCount;
+                maxRow = (PageIndexs) * rowCount;
+
+                SQL.Append(" limit " + minRow + " , " + maxRow);
+            }
+            #endregion
+
+            return SQL.ToString();
+        }
+        #endregion
 		
         public static SqlDataReader ExecuteQuery(string cmdText, CommandType cmdType, SqlParameter[] pars)
         {

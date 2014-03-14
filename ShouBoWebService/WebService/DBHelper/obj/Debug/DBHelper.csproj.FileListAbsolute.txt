@@ -3,9 +3,7 @@ C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\bin\Debug\DBHelper
 C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\obj\Debug\DBHelper.dll
 C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\obj\Debug\DBHelper.pdb
 C:\Users\Administrator\Desktop\WebService\WebService\DBHelper\obj\Debug\DBHelper.csprojResolveAssemblyReference.cache
-E:\Work\ShouBoWebService\WebService\DBHelper\bin\Debug\DBHelper.dll
-E:\Work\ShouBoWebService\WebService\DBHelper\bin\Debug\DBHelper.pdb
-E:\Work\ShouBoWebService\WebService\DBHelper\bin\Debug\MySql.Data.dll
-E:\Work\ShouBoWebService\WebService\DBHelper\obj\Debug\DBHelper.csprojResolveAssemblyReference.cache
-E:\Work\ShouBoWebService\WebService\DBHelper\obj\Debug\DBHelper.dll
-E:\Work\ShouBoWebService\WebService\DBHelper\obj\Debug\DBHelper.pdb
+C:\Users\Administrator\Desktop\WebService\DBHelper\bin\Debug\DBHelper.dll
+C:\Users\Administrator\Desktop\WebService\DBHelper\bin\Debug\DBHelper.pdb
+C:\Users\Administrator\Desktop\WebService\DBHelper\obj\Debug\DBHelper.dll
+C:\Users\Administrator\Desktop\WebService\DBHelper\obj\Debug\DBHelper.pdb

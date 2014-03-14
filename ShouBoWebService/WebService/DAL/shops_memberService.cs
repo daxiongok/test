@@ -11,7 +11,6 @@ namespace DAL
 {
     public class shops_memberService
     {
-        //登陆
         public static int login(Model.shops_member obj, string ipAddress)
         {
             if (validate(obj.user_name) > 0)
@@ -20,7 +19,7 @@ namespace DAL
             }
             return -1;
         }
-        //注册
+
         public static int register(Model.shops_member obj, string ipAddress)
         {
             if (validate(obj.user_name) <= 0)
@@ -35,7 +34,7 @@ namespace DAL
             }
             return -2;
         }
-        //增加用户
+
         private static int addshops_member(Model.shops_member obj, string ipAddress)
         {
             string SQL = "insert into shops_member (user_name ,email ,password ,gender ,reg_time ,last_login ,last_ip ,logins ,ugrade,outer_id ,feed_config ,pay_points ,grade_points ,user_grade ,isvalidate ) values (@user_name,@email,@password,@gender,@reg_time,@last_login,@last_ip,@logins,@ugrade,@outer_id,@feed_config,@pay_points,@grade_points,@user_grade,@isvalidate)";
@@ -75,7 +74,7 @@ namespace DAL
 
             return DBHelper.MySQL.ExecuteNonQuery(SQL, CommandType.Text, pars);
         }
-        //判断用户名是否存在，返回查询行数
+
         private static int validate(string user_name)
         {
             string SQL = "select user_id  from shops_member where user_name = @user_name ";
@@ -89,7 +88,6 @@ namespace DAL
 
             return dt.Rows.Count;
         }
-        //判断用户名和密码是否存在返回查询条数
 
         private static int loginValidate(Model.shops_member obj, string ipAddress)
         {
@@ -110,7 +108,7 @@ namespace DAL
 
             return result;
         }
-        //添加用户
+
         private static void addLoginsCount(int user_id, string ipAddress)
         {
             string SQL = "update shops_member set logins = logins +1, last_login = @last_login , last_ip = @last_ip  where user_id  = @user_id ";

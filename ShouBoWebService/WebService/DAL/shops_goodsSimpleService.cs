@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 namespace DAL
 {
     public class shops_goodsSimpleService
-    {    //商品简单信息展示
+    {
         public static List<Model.shops_goodsSimple> getShops_goodsSimpleList(int pageIndex, int cate_id)
         {
             List<Model.shops_goodsSimple> objList = new List<Model.shops_goodsSimple>();
@@ -36,5 +36,7 @@ namespace DAL
             return objList;
 
         }
+ 
+    
     }
 }

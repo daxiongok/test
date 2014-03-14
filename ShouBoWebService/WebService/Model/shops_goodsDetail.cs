@@ -19,5 +19,9 @@ namespace Model
         public string unit { get; set; }
         //出售情况
         public int subtotalsale { get; set; }
+        //规格1
+        public string spec_name_1 { get; set; }
+        //规格2
+        public string spec_name_2 { get; set; }
     }
 }

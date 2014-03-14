@@ -54,7 +54,8 @@
     <Content Include="Global.asax" />
     <Content Include="shops_goodsDetailWebService.asmx" />
     <Content Include="shops_goodsSimpleWebService.asmx" />
-    <Content Include="userStates.asmx" />
+    <Content Include="shops_orderWebService.asmx" />
+    <Content Include="userStatesWebService.asmx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -64,6 +65,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WebService1.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -78,8 +80,16 @@
       <DependentUpon>shops_goodsSimpleWebService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="userStates.asmx.cs">
-      <DependentUpon>userStates.asmx</DependentUpon>
+    <Compile Include="shops_orderWebService.asmx.cs">
+      <DependentUpon>shops_orderWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="userStatesWebService.asmx.cs">
+      <DependentUpon>userStatesWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
