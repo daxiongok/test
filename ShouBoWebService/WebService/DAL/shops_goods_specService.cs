@@ -9,6 +9,7 @@ namespace DAL
 {
     public class shops_goods_specService
     {
+        //根据商品id获取商品购买页详细信息
         public static List<Model.shops_goods_spec> getShops_goods_specById(int goods_id)
         {
             List<Model.shops_goods_spec> list = new List<Model.shops_goods_spec>();
@@ -38,7 +39,7 @@ namespace DAL
 
             return list;
         }
-
+        //根据商品类型id获取商品购买页详细信息
         public static Model.shops_goods_spec findShops_Goods_ImageById(int spec_id)
         {
             string SQL = DBHelper.MySQL.CreateSQLIndex(" spec_1 ,spec_2 ,price ,mk_price ,internal_code  ", " shops_goods_spec ", "spec_id = " + spec_id, null, null, 0);

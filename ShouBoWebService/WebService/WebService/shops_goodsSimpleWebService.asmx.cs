@@ -18,7 +18,12 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class shops_goodsSimpleWebService : System.Web.Services.WebService
     {
-
+        /// <summary>
+        /// 获取商品列表
+        /// </summary>
+        /// <param name="pageIndex"></param>
+        /// <param name="cate_id"></param>
+        /// <returns></returns>
         [WebMethod(Description = "商品列表")]
         public string getShops_goodsSimpleList(int pageIndex,int cate_id)
         {

@@ -16,7 +16,7 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class WebService1 : System.Web.Services.WebService
     {
-
+        //这是毛？
         [WebMethod]
         public long math()
         {

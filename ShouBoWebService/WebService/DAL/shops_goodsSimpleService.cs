@@ -11,6 +11,7 @@ namespace DAL
 {
     public class shops_goodsSimpleService
     {
+        //根据商品类型获取商品信息
         public static List<Model.shops_goodsSimple> getShops_goodsSimpleList(int pageIndex, int cate_id)
         {
             List<Model.shops_goodsSimple> objList = new List<Model.shops_goodsSimple>();
