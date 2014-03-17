@@ -68,6 +68,12 @@
     <Content Include="WebService1.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+<<<<<<< HEAD
+    <Compile Include="Class2.cs" />
+=======
+    <Compile Include="Class3.cs" />
+>>>>>>> 4226855cdfb8292399b1babdf43f5c4bf9f28589
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
