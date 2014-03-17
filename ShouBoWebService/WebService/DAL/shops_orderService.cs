@@ -11,29 +11,33 @@ namespace DAL
 {
     public class shops_orderService
     {
-        public static Model.shops_order findOrder_idByBuyer_id(int buyer_id)
+        public static List<Model.shops_order> findOrder_idByBuyer_id(int buyer_id)
         {
+            List<Model.shops_order> objList = new List<Model.shops_order>();
 
             Model.shops_order obj = null;
 
-            string SQL = DBHelper.MySQL.CreateSQLIndex("buyer_id,pay_time", "shops_order", "where buyer_id = @buyer_id", 0);
+            string SQL = DBHelper.MySQL.CreateSQLIndex("order_id,pay_time", "shops_order", "buyer_id = @buyer_id and pay_alter=1", "order_id ", "asc", 0);
 
             MySqlParameter[] pars = new MySqlParameter[]{
-                new MySqlParameter("@buyer_id",MySqlDbType.Int32)
+                new MySqlParameter("@buyer_id",MySqlDbType.Bit)
             };
             pars[0].Value = buyer_id;
 
             DataTable dt = DBHelper.MySQL.GetDT(SQL, pars);
 
-            if (dt.Rows.Count>0)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
                 obj = new Model.shops_order();
 
-                obj.order_id = Convert.ToInt32(dt.Rows[0]["order_id"]);
-                obj.pay_time = Convert.ToInt64(dt.Rows[0]["pay_time"]);
+                obj.order_id = Convert.ToInt32(dt.Rows[i]["order_id"]);
+                obj.pay_time = Convert.ToInt32(dt.Rows[i]["pay_time"]);
+
+                objList.Add(obj);
+
             }
 
-            return obj;
+            return objList;
         }
   
     

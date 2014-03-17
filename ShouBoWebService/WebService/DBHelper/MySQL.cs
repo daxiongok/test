@@ -10,12 +10,12 @@ using System.Data;
 using MySql.Data.MySqlClient;
 
 namespace DBHelper
-{ 
+{
     public class MySQL
     {
         public static int rowCounts = 16;
 
-        
+
 
         public static MySqlConnection conn;
         public static MySqlTransaction tran;
@@ -31,15 +31,15 @@ namespace DBHelper
         #region SQL语句
         public static string CreateSQLIndex(string select, string tableName, int PageIndexs)
         {
-            return CreateSQLIndex(select, tableName, null, null, null, null, null, PageIndexs);
+            return CreateSQLIndex(select, tableName, null, PageIndexs);
         }
-        public static string CreateSQLIndex(string select, string tableName, string where, int PageIndexs) 
+        public static string CreateSQLIndex(string select, string tableName, string where, int PageIndexs)
         {
-            return CreateSQLIndex(select, tableName, where, null, null, null, null, PageIndexs);
+            return CreateSQLIndex(select, tableName, where, null, null, PageIndexs);
         }
         public static string CreateSQLIndex(string select, string tableName, string where, string order, string orderBy, int PageIndexs)
         {
-            return CreateSQLIndex(select, tableName, where, order, orderBy, null, null, PageIndexs);
+            return CreateSQLIndex(select, tableName, where, null, null, order, orderBy, PageIndexs);
         }
         public static string CreateSQLIndex(string select, string tableName, string where, string having, string groupBy, string order, string orderBy, int PageIndexs)
         {
@@ -114,7 +114,7 @@ namespace DBHelper
         }
         private static void fixCmd(MySqlConnection con, MySqlCommand cmd, string SQL, MySqlParameter[] pars, CommandType type, MySqlTransaction tran)
         {
-            
+
             cmd.Connection = con;
             cmd.CommandText = SQL;
             cmd.CommandType = type;
@@ -179,7 +179,7 @@ namespace DBHelper
             MySqlTransaction tran = conn.BeginTransaction(IsolationLevel.ReadCommitted);
             int result = 0;
             MySqlCommand cmd = new MySqlCommand();
-            fixCmd(con, cmd, SQL, pars, cmdType,tran);
+            fixCmd(con, cmd, SQL, pars, cmdType, tran);
             try
             {
                 result = cmd.ExecuteNonQuery();

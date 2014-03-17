@@ -53,6 +53,7 @@
     <Compile Include="shops_memberInfoService.cs" />
     <Compile Include="shops_memberService.cs" />
     <Compile Include="shops_orderService.cs" />
+    <Compile Include="shops_order_goodsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DBHelper\DBHelper.csproj">

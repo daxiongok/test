@@ -24,3 +24,16 @@ C:\Users\Administrator\Desktop\WebService\WebService\bin\DBHelper.pdb
 C:\Users\Administrator\Desktop\WebService\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\WebService\WebService\obj\Debug\WebService.dll
 C:\Users\Administrator\Desktop\WebService\WebService\obj\Debug\WebService.pdb
+E:\Work\ShouBoWebService\WebService\WebService\bin\WebService.dll
+E:\Work\ShouBoWebService\WebService\WebService\bin\WebService.pdb
+E:\Work\ShouBoWebService\WebService\WebService\bin\BLL.dll
+E:\Work\ShouBoWebService\WebService\WebService\bin\Model.dll
+E:\Work\ShouBoWebService\WebService\WebService\bin\DAL.dll
+E:\Work\ShouBoWebService\WebService\WebService\bin\DBHelper.dll
+E:\Work\ShouBoWebService\WebService\WebService\bin\BLL.pdb
+E:\Work\ShouBoWebService\WebService\WebService\bin\Model.pdb
+E:\Work\ShouBoWebService\WebService\WebService\bin\DAL.pdb
+E:\Work\ShouBoWebService\WebService\WebService\bin\DBHelper.pdb
+E:\Work\ShouBoWebService\WebService\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
+E:\Work\ShouBoWebService\WebService\WebService\obj\Debug\WebService.dll
+E:\Work\ShouBoWebService\WebService\WebService\obj\Debug\WebService.pdb

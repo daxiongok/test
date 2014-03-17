@@ -47,6 +47,8 @@
     <Compile Include="shops_goods_specManager.cs" />
     <Compile Include="shops_memberInfoManager.cs" />
     <Compile Include="shops_memberManager.cs" />
+    <Compile Include="shops_orderManager.cs" />
+    <Compile Include="shops_order_goodsManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
