@@ -18,7 +18,11 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class shops_goodsDetailWebService : System.Web.Services.WebService
     {
-
+        /// <summary>
+        /// 获取单个商品返回三个json
+        /// </summary>
+        /// <param name="goods_id"></param>
+        /// <returns></returns>
         [WebMethod(Description = "获取单个商品返回了三个JSON")]
         public string getShops_GoodsDetail(int goods_id)
         {
