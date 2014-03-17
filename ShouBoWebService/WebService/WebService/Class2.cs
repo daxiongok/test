@@ -5,10 +5,7 @@ using System.Web;
 
 namespace WebService
 {
-    public class Class1
+    public class Class2
     {
-        ///
-        /// 泥煤！！！
-        ///
     }
 }
