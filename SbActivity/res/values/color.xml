@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <!-- 我的搜帛 -->
+    <color name="black">#ff000000</color>
+	<color name="lightgray">#eeaaaaaa</color>
+	<color name="red">#FF0000</color>
+	
+	
+	<!-- 首页 -->
+	<color name="darkgray">#a9a9a9</color><!-- 暗灰色 -->
+	<color name="ju_huang">#FF4500</color>
+	<!--会员中心  -->
+	<color name="yinhui">#C0C0C0</color>
+    
+</resources>

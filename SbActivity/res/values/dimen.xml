@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_back_margin_left">10dip</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="top_bar_progressbar_margin_left">15dip</dimen>
+    
+    <dimen name="bottom_tab_padding_drawable">0.0dip</dimen>
+	<dimen name="bottom_tab_padding_up">30dip</dimen>
+	<!-- 首页 -->
+	 <dimen name="font_size_8">8sp</dimen>
+       <dimen name="Money">10sp</dimen>
+</resources>

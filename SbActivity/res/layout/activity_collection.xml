@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+       <LinearLayout 
+           android:id="@+id/Collection"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <CheckBox
+               android:id="@+id/checkbox_delete"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="全选"
+               android:textSize="12dp"
+               android:clickable="true"
+               android:focusable="true"
+                />
+             <TextView 
+                 android:id="@+id/delete"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="删除"
+                 android:layout_marginLeft="5dp"
+                  android:textSize="12dp"
+                 android:clickable="true"
+                 />
+       </LinearLayout>
+       <View 
+           android:id="@+id/collectionview"
+           android:layout_width="match_parent"
+           android:layout_height="0.5dp"
+           android:background="@color/red"
+           android:layout_below="@+id/Collection"
+           />
+     <ListView 
+     android:id="@+id/collection_listview"
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent"
+     android:divider="@drawable/filter_spider_line"
+     android:layout_below="@+id/collectionview"
+     >
+    </ListView>
+             
+     
+</RelativeLayout>

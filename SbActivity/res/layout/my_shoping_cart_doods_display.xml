@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/goods_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:layout_centerVertical="true"
+        android:src="@drawable/catergory_deskbook" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/goods_image"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="13dip"
+        android:layout_toRightOf="@id/goods_image"
+        android:text="联想deskbook008" />
+
+    <TextView
+        android:id="@+id/single_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/goods_name"
+        android:layout_below="@id/goods_name"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/goods_image"
+        android:text="@string/single_price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_name"
+        android:layout_marginTop="8dip"
+        android:id="@+id/goods_price"
+        android:layout_toRightOf="@id/single_price"
+        android:text="29元" />
+
+    <TextView
+        android:id="@+id/goods_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/single_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:text="2件" />
+
+    <TextView
+        android:id="@+id/goods_numm_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/single_price"
+        android:layout_marginLeft="60dip"
+        android:layout_toLeftOf="@id/goods_num"
+        android:text="@string/goods_num" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/single_price"
+        android:layout_marginLeft="110dip"
+        android:layout_marginTop="3dip"
+        android:layout_marginRight="20dip"
+        android:background="@color/darkgray" />
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="5dip"
+        android:text="58元"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/subtotal"
+        android:layout_toLeftOf="@id/subtotal"
+        android:text="@string/subtotal" />
+
+</RelativeLayout>

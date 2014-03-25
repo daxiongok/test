@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/checkboxs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <CheckBox
+            android:id="@+id/delete_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            /> 
+            <ImageView 
+                android:id="@+id/collect_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:background="@drawable/buy_body_simple"
+                />
+          <TextView 
+              android:id="@+id/collection_body_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="帅气男装"
+              />
+          <TextView 
+              android:id="@+id/collection_prices"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:text="￥:156"
+              
+              />
+  </LinearLayout>
+
+</LinearLayout>

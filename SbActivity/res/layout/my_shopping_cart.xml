@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/user_text"
+                style="@style/my_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:text="@string/user_name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/user_text"
+                android:layout_toRightOf="@id/user_text"
+                android:text="王家汪汇"
+                android:textColor="@color/darkgray" />
+
+            <TextView
+                android:id="@+id/balance_text"
+                style="@style/my_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/user_text"
+                android:layout_below="@id/user_name"
+                android:layout_marginTop="30dip"
+                android:text="@string/balance" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/balance_text"
+                android:layout_toRightOf="@id/balance_text"
+                android:text="￥437.00"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tel_text"
+                style="@style/my_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/balance_text"
+                android:layout_below="@id/balance_text"
+                android:layout_marginTop="10dip"
+                android:text="@string/tel" />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tel_text"
+                android:layout_toRightOf="@id/tel_text"
+                android:text="139832356478"
+                android:textColor="@color/darkgray" />
+
+            <ImageView
+                android:id="@+id/shopping_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tel"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/balance"
+                android:src="@drawable/my_shopping_cart" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/address_text"
+                style="@style/my_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="false"
+                android:editable="true"
+                android:focusable="false"
+                android:text="付款古拉见鬼了贷款"
+                android:textColor="@color/darkgray" />
+
+            <Button
+                android:id="@+id/update_address"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/update_address_cart"
+                android:onClick="onAction" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_bg"
+            android:orientation="vertical" >
+
+            <com.soubo.widgets.LinearLayoutForListview
+                android:id="@+id/goods_display"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </com.soubo.widgets.LinearLayoutForListview>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="180dip" >
+
+                <TextView
+                    android:id="@+id/coupon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="@string/coupon"
+                    android:textColor="@color/darkgray" />
+
+                <TextView
+                    android:id="@+id/soubo_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/coupon"
+                    android:layout_marginLeft="35dip"
+                    android:text="@string/soubo_coupon"
+                    android:textColor="@color/darkgray" />
+
+                <ToggleButton
+                    android:id="@+id/toggle"
+                    android:layout_width="70dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@id/soubo_coupon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/toggle"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="30dip"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/bargain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/soubo_coupon"
+                    android:layout_below="@id/view"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/bargain_card"
+                    android:textColor="@color/darkgray" />
+
+                <ToggleButton
+                    android:id="@+id/bargain_toggle"
+                    android:layout_width="70dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/view"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    android:id="@+id/after_folding_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/bargain_toggle"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dip"
+                    android:text="折后总价为：116-30=86元"
+                    android:textColor="@color/red" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@id/after_folding_price"
+                    android:background="@color/darkgray" />
+
+                <Button
+                    android:id="@+id/settlement"
+                    android:layout_width="100dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/view1"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/settlement" />
+
+                <TextView
+                    android:id="@+id/settlement_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_toLeftOf="@id/settlement"
+                    android:text="116元"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1"
+                    android:layout_marginTop="13dip"
+                    android:layout_toLeftOf="@id/settlement_count"
+                    android:text="@string/settlement_count"
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

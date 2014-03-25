@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/member_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 头部 -->
+
+        <include layout="@layout/activity_search_general_merchandise_top" />
+        <!-- 搜索 -->
+
+        <include layout="@layout/search_layout" />
+
+        <!-- 商家信息 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/store_head_image"
+                android:layout_width="70dip"
+                android:layout_height="80dip"
+                android:layout_marginLeft="10dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_search_head" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="15dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/store_name"
+                    style="@style/my_search_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王汪家汇" />
+
+                <TextView
+                    android:id="@+id/store_vip"
+                    style="@style/my_search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dip"
+                    android:layout_toRightOf="@id/store_name"
+                    android:text="VIP注册会员" />
+
+                <LinearLayout
+                    android:id="@+id/yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_vip"
+                    android:layout_marginTop="8dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/store_YuE"
+                        style="@style/my_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余额:" />
+
+                    <TextView
+                        android:id="@+id/store_YuE_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="￥437:00"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/store_point"
+                    style="@style/my_search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_vip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_toRightOf="@id/yue"
+                    android:text="积分：220" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 会员操作 -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                    <!-- 已买到 -->
+
+                    <RelativeLayout style="@style/PersonalTopStyle" >
+
+                        <ImageView
+                            android:id="@+id/has_purchased_ico"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/my_search1" />
+
+                        <TextView
+                            android:id="@+id/buy_body"
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/has_purchased_ico"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="click"
+                            android:text="@string/has_purchased" />
+
+                        <ImageView
+                            android:id="@+id/has_purchased_image"
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+                    <!-- 已卖出 -->
+
+
+                    <!--
+            <RelativeLayout style="@style/PersonalTopStyle" >
+
+                <ImageView
+                    android:id="@+id/sole_icon"
+                    style="@style/PersonalIconStyle"
+                    android:src="@drawable/my_search2" />
+
+                <TextView
+                    android:id="@+id/sell_bodys"
+                    style="@style/PersonalTextStyle"
+                    android:layout_toRightOf="@id/sole_icon"
+                    android:text="@string/sole" />
+
+                <ImageView
+                    android:id="@+id/sole_image"
+                    style="@style/PersonalRightIconStyle"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+                    -->
+
+                    <View style="@style/PersonalLine" />
+                    <!-- 已收藏 -->
+
+                    <RelativeLayout style="@style/PersonalTopStyle" >
+
+                        <ImageView
+                            android:id="@+id/has_collect_icon"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/my_search3" />
+
+                        <TextView
+                            android:id="@+id/collection_bodys"
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/has_collect_icon"
+                            android:text="@string/has_collect" />
+
+                        <ImageView
+                            android:id="@+id/has_collect_image"
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+                    <!-- 消息 -->
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalTopStyle" >
+
+                        <ImageView
+                            android:id="@+id/message_center_icon"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/my_search4" />
+
+                        <TextView
+                            android:id="@+id/infos_member"
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/message_center_icon"
+                            android:text="@string/message_center" />
+
+                        <ImageView
+                            android:id="@+id/message_center_image"
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+                    <!-- 用户 -->
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalTopStyle" >
+
+                        <ImageView
+                            android:id="@+id/user_manual_icon"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/my_search5" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/user_manual_icon"
+                            android:text="@string/user_manual" />
+
+                        <ImageView
+                            android:id="@+id/user_manual_image"
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/PersonalLine"
+                        android:layout_marginBottom="10dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/unlogin_member"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/activity_unlogin_shopping_cart" />
+    </LinearLayout>
+"
+
+</LinearLayout>
