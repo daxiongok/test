@@ -18,6 +18,12 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class userStates : System.Web.Services.WebService
     {
+        /// <summary>
+        /// 登陆
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="userPsd"></param>
+        /// <returns></returns>
         [WebMethod(Description = "登录的方法", EnableSession = true)]
         public int loginValidate(string userName, string userPsd)
         {
@@ -34,7 +40,7 @@ namespace WebService
 
             return result;
         }
-
+        //注册
         [WebMethod(Description = "注册的方法", EnableSession = true)]
         public int register(string userName, string userPsd, string eMail)
         {
@@ -45,7 +51,7 @@ namespace WebService
 
             return BLL.shops_memberManager.register(obj, HttpContext.Current.Request.UserHostAddress);
         }
-
+        //获取单个用户信息
         [WebMethod(Description = "获取单个用户信息")]
         public string findShops_memberInfoById(int userId)
         {
@@ -57,7 +63,7 @@ namespace WebService
 
             return json;
         }
-
+        //获取单个用户信息
         [WebMethod(Description = "获取单个用户信息", EnableSession = true)]
         public string session()
         {

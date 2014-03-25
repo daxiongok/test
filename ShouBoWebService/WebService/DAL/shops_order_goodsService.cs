@@ -11,6 +11,7 @@ namespace DAL
 {
     public class shops_order_goodsService
     {
+        //根据商品id排序
         public static List<Model.shops_order_goods> findShops_order_goods(List<Model.shops_order> objList)
         {
             StringBuilder index = new StringBuilder();

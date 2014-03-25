@@ -11,6 +11,7 @@ namespace DAL
 {
     public class shops_orderService
     {
+        //根据购买者id获取支付记录
         public static List<Model.shops_order> findOrder_idByBuyer_id(int buyer_id)
         {
             List<Model.shops_order> objList = new List<Model.shops_order>();

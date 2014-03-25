@@ -20,7 +20,11 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class shops_order : System.Web.Services.WebService
     {
-
+        /// <summary>
+        /// 获取商品订单
+        /// </summary>
+        /// <param name="buyer_id"></param>
+        /// <returns></returns>
         [WebMethod(Description = "商品订单(返回两个JSON)")]
         public string getShops_order(int buyer_id)
         {
