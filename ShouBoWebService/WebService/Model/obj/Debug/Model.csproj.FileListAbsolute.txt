@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\WebService\WebService\Model\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\WebService\Model\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\Model\obj\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\WebService\Model\obj\Debug\Model.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WebService\Model\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\Model\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\WebService\Model\obj\Debug\Model.dll
+C:\Users\Administrator\Desktop\WebService\Model\obj\Debug\Model.pdb
+E:\Work\ShouBoWebService\WebService\Model\bin\Debug\Model.dll
+E:\Work\ShouBoWebService\WebService\Model\bin\Debug\Model.pdb
+E:\Work\ShouBoWebService\WebService\Model\obj\Debug\Model.dll
+E:\Work\ShouBoWebService\WebService\Model\obj\Debug\Model.pdb

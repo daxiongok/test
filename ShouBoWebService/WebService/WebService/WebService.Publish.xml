@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Administrator\Desktop\ssssss" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="03/17/2014 10:29:53" />
+    <file relUrl="bin/WebService.dll" publishTime="03/17/2014 10:58:18" />
+    <file relUrl="bin/DBHelper.dll" publishTime="03/17/2014 10:45:10" />
+    <file relUrl="shops_orderWebService.asmx" publishTime="03/14/2014 10:48:29" />
+    <file relUrl="WebService1.asmx" publishTime="03/14/2014 14:04:13" />
+    <file relUrl="userStatesWebService.asmx" publishTime="03/14/2014 10:48:34" />
+    <file relUrl="bin/Model.dll" publishTime="03/17/2014 10:22:22" />
+    <file relUrl="bin/DAL.dll" publishTime="03/17/2014 10:56:06" />
+    <file relUrl="bin/DBHelper.pdb" publishTime="03/17/2014 10:45:10" />
+    <file relUrl="bin/WebService.pdb" publishTime="03/17/2014 10:58:18" />
+    <file relUrl="Web - 副本.config" publishTime="03/10/2014 09:33:12" />
+    <file relUrl="Global.asax" publishTime="03/03/2014 18:02:29" />
+    <file relUrl="bin/DAL.pdb" publishTime="03/17/2014 10:56:06" />
+    <file relUrl="bin/BLL.pdb" publishTime="03/17/2014 10:56:06" />
+    <file relUrl="shops_goodsSimpleWebService.asmx" publishTime="03/05/2014 11:33:43" />
+    <file relUrl="bin/Model.pdb" publishTime="03/17/2014 10:22:22" />
+    <file relUrl="shops_goodsDetailWebService.asmx" publishTime="03/07/2014 16:11:04" />
+    <file relUrl="bin/BLL.dll" publishTime="03/17/2014 10:56:06" />
+  </publishProfile>
+</publishData>

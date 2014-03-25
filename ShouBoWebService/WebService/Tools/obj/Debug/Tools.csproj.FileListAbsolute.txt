@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\WebService\WebService\Tools\bin\Debug\Tools.dll
+C:\Users\Administrator\Desktop\WebService\WebService\Tools\bin\Debug\Tools.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\Tools\obj\Debug\Tools.dll
+C:\Users\Administrator\Desktop\WebService\WebService\Tools\obj\Debug\Tools.pdb
+C:\Users\Administrator\Desktop\WebService\WebService\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WebService\Tools\bin\Debug\Tools.dll
+C:\Users\Administrator\Desktop\WebService\Tools\bin\Debug\Tools.pdb
+C:\Users\Administrator\Desktop\WebService\Tools\obj\Debug\Tools.dll
+C:\Users\Administrator\Desktop\WebService\Tools\obj\Debug\Tools.pdb
+E:\Work\ShouBoWebService\WebService\Tools\bin\Debug\Tools.dll
+E:\Work\ShouBoWebService\WebService\Tools\bin\Debug\Tools.pdb
+E:\Work\ShouBoWebService\WebService\Tools\obj\Debug\Tools.dll
+E:\Work\ShouBoWebService\WebService\Tools\obj\Debug\Tools.pdb
